@@ -1,57 +1,45 @@
 ---
 title: "Week 9 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 9
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 9 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Design the concept and architecture for a real-world project: ITCoach.
+* Define the tech stack, analyze system requirements, and plan the implementation.
+* Design the data model and divide work for the following weeks.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| Mon | - Brainstorm project ideas <br> - Define the core problem: an AI-powered IT interview practice platform <br> - Analyze the target user profile | 06/15/2026 | 06/15/2026 | |
+| Tue | - Define tech stack: ReactJS + Lambda + DynamoDB + Cognito + Polly + OpenAI <br> - Design the overall Serverless architecture <br> - Draw the AWS architecture diagram: CloudFront, API Gateway, Lambda, DynamoDB, S3, SQS, Cognito | 06/16/2026 | 06/16/2026 | |
+| Wed | - Design data model for 8 DynamoDB tables: <br>&emsp; + itcoach-users, itcoach-questions, itcoach-sessions <br>&emsp; + itcoach-answers, itcoach-history, itcoach-topics <br>&emsp; + itcoach-quiz-attempts (Spaced Repetition SM-2) <br>&emsp; + itcoach-gamification (XP, level, streak, badge) <br> - Define Partition Key, Sort Key, and GSI for each table | 06/17/2026 | 06/17/2026 | |
+| Thu | - Design 8 API endpoints: `/auth`, `/questions`, `/topics`, `/sessions`, `/answers`, `/results`, `/quiz`, `/leaderboard` <br> - Analyze the async processing flow: Answer -> SQS -> Lambda AI Processor -> OpenAI -> Polly -> DynamoDB <br> - Plan the security layer: Cognito JWT, WAF, Rate Limiting | 06/18/2026 | 06/19/2026 | |
+| Fri | - Create a detailed deployment plan for weeks 10, 11, and 12 <br> - Divide modules: IAM, S3, DynamoDB, Cognito, SQS (week 10) <br> - Lambda, API Gateway, CloudFront, WAF (week 11) <br> - Route 53, ACM, Monitoring, Code deployment (week 12) | 06/19/2026 | 06/19/2026 | |
 
 ### Week 9 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Defined the core problem: build an AI-powered IT interview practice platform including Mock Interview (text + voice), a quiz system with Spaced Repetition, and gamification features.
 
-* Successfully created and configured an AWS Free Tier account.
+* Designed a complete Serverless architecture on AWS:
+  * Frontend: ReactJS hosted on S3, distributed via CloudFront
+  * Backend: 8 Lambda functions called through a Regional API Gateway
+  * Async processing: SQS -> Lambda AI Processor -> OpenAI STT/GPT -> Polly TTS
+  * Auth: Amazon Cognito User Pool with JWT
+  * Domain: itcoach24h.xyz, SSL via ACM, DNS via Route 53
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Designed the DynamoDB data model for 8 tables, clearly identifying:
+  * Partition Key and Sort Key suited to each access pattern
+  * Required GSIs: category-index, userId-index, sessionId-index, xp-index
+  * The itcoach-quiz-attempts table stores SM-2 state (interval, easeFactor, nextReviewDate)
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Planned a 2-layer WAF security strategy:
+  * Global WAF (us-east-1) attached to CloudFront
+  * Regional WAF (ap-southeast-1) attached to API Gateway, with a dedicated rule protecting the `/auth` endpoint against brute-force attacks
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Completed a 3-week deployment plan with clear module assignments based on the ITCoach Console ClickGuide v14.

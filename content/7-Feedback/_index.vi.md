@@ -5,40 +5,64 @@ weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
 
 ### Đánh giá chung
 
-**1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+**1. Môi trường học tập và làm việc**
 
-**2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+Môi trường của First Cloud Journey - AWS Study Group rất cởi mở và thực chiến. Toàn bộ chương trình được thiết kế theo hướng hands-on — không chỉ đọc lý thuyết mà phải tự tay làm trên AWS Console, tự debug khi gặp lỗi, tự tìm cách giải quyết.
 
-**3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
+Điều tôi ấn tượng nhất là không khí cộng đồng: mọi người chia sẻ kinh nghiệm thực tế, hỗ trợ nhau qua group, không ai bị bỏ lại phía sau khi gặp khó khăn kỹ thuật. Hai sự kiện FCAJ Community Day tại Bitexco tháng 5 và tháng 6 năm 2026 cũng tạo thêm cơ hội kết nối với cộng đồng AWS Việt Nam rộng lớn hơn.
 
-**4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
+**2. Sự hỗ trợ từ mentor và cộng đồng**
 
-**5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+Tài liệu hướng dẫn trên cloudjourney.awsstudygroup.com được chuẩn bị rất kỹ lưỡng, có ảnh chụp màn hình từng bước, dễ theo dõi ngay cả khi giao diện AWS thay đổi. Khi gặp lỗi không có trong tài liệu — như WAF block nhầm request, CloudFront cache cũ, SQS trigger không hoạt động — tôi phải tự tìm hiểu qua CloudWatch Logs và AWS documentation, điều này thực ra giúp tôi học sâu hơn nhiều so với chỉ làm theo hướng dẫn.
 
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
+Cộng đồng AWS Study Group trên Facebook cũng là nguồn hỗ trợ quan trọng khi có câu hỏi kỹ thuật cụ thể.
 
+**3. Sự phù hợp giữa chương trình và thực tế nghề nghiệp**
 
-### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
+Lộ trình 12 tuần được thiết kế hợp lý: 8 tuần học các dịch vụ AWS cốt lõi qua 21 labs có thứ tự từ nền tảng đến nâng cao, sau đó 4 tuần áp dụng vào dự án thực tế. Cách tiếp cận này giúp tôi không chỉ biết cách dùng từng dịch vụ riêng lẻ mà còn hiểu cách kết hợp chúng thành một hệ thống hoàn chỉnh.
 
+Project ITCoach là phần tôi học được nhiều nhất: từ thiết kế kiến trúc Serverless, chọn đúng dịch vụ AWS cho từng bài toán, xử lý các vấn đề thực tế khi deploy, đến quản lý chi phí và bảo mật hệ thống production.
 
-### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
+**4. Cơ hội học hỏi và phát triển kỹ năng**
+
+Sau 12 tuần, tôi đã có thể:
+- Thiết kế và triển khai kiến trúc Serverless từ đầu trên AWS
+- Viết và debug Lambda functions, cấu hình API Gateway với Cognito auth
+- Thiết kế DynamoDB data model cho ứng dụng thực tế
+- Cấu hình CloudFront, WAF, Route 53, ACM
+- Đọc CloudWatch Logs để trace lỗi trong production
+- Quản lý chi phí AWS và nhận biết các dịch vụ có thể tốn tiền ngoài dự kiến
+
+Đây là những kỹ năng tôi không thể học được chỉ từ sách vở hay khóa học online thông thường.
+
+**5. Văn hóa cộng đồng**
+
+FCAJ có văn hóa chia sẻ tích cực. Các buổi Community Day không chỉ là nơi nghe talk mà còn là cơ hội nhìn thấy người đi trước đang dùng AWS như thế nào trong công việc thực tế — từ autonomous incident response đến voice AI, từ multi-agent systems đến MCP security. Điều này giúp tôi hiểu rõ hơn mình đang học để làm gì và sẽ áp dụng vào đâu.
+
+**6. Chương trình và lộ trình học**
+
+Chương trình có độ khó tăng dần hợp lý. Tuy nhiên, 21 labs trong 8 tuần là khá dày — trung bình 3 labs/tuần, mỗi lab cần 1-2 tiếng để đọc, làm và hiểu. Những tuần đầu còn quen dần với AWS Console, nên tốc độ chậm hơn. Tôi nghĩ việc phân bổ thêm thời gian cho các labs phức tạp (EKS, SageMaker) sẽ giúp học sâu hơn thay vì phải chạy theo tiến độ.
+
+---
+
+### Điều hài lòng nhất
+
+Hoàn thành project ITCoach và thấy website chạy thật tại `https://itcoach24h.xyz` với HTTPS, WAF protection, CloudWatch monitoring — tất cả những gì tôi đã build từ tuần 9 đến tuần 12. Đây không phải demo hay mockup mà là hệ thống thật đang chạy trên AWS.
+
+### Điều chương trình nên cải thiện
+
+Phần documentation cho một số labs chưa cập nhật kịp với giao diện mới của AWS Console — đặc biệt là Cognito (giao diện mới khác hoàn toàn wizard cũ) và CloudFront (workflow tạo distribution đã thay đổi). Tôi mất khá nhiều thời gian đối chiếu giữa tài liệu cũ và giao diện mới để tìm đúng option cần chọn.
+
+### Có khuyên bạn bè tham gia không?
+
+Có, đặc biệt với những bạn muốn vào vị trí Cloud Engineer, DevOps, hoặc Backend Developer với kinh nghiệm AWS. Chương trình cho trải nghiệm thực tế mà các khóa học có chứng chỉ thông thường không có được.
+
+### Đề xuất
+
+- Cập nhật ảnh chụp màn hình trong tài liệu hướng dẫn theo giao diện AWS mới nhất
+- Thêm phần "Common Errors & Troubleshooting" cho mỗi lab — những lỗi hay gặp và cách xử lý
+- Có thể mở rộng phase project (tuần 9-12) thêm 1-2 tuần để có thời gian hoàn thiện và test kỹ hơn
+- Tổ chức thêm buổi demo day cuối chương trình để các học viên trình bày project của mình

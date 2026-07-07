@@ -5,55 +5,34 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 1:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Làm quen với môi trường thực tập và các thành viên trong First Cloud Journey - AWS Study Group.
+* Nắm rõ nội quy, quy trình làm việc và kỳ vọng của chương trình.
+* Thiết lập môi trường làm việc cá nhân và tổng quan về lộ trình học tập 12 tuần.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 6 | - Tham gia buổi giới thiệu chương trình First Cloud Journey <br> - Làm quen với các thành viên trong nhóm <br> - Đọc và ghi nhớ nội quy, quy định của đơn vị thực tập | 17/04/2026 | 17/04/2026 | |
+| 2 | - Đọc tổng quan lộ trình học tập 12 tuần <br> - Tìm hiểu cấu trúc chương trình trên cloudjourney.awsstudygroup.com <br> - Nắm được các mục tiêu cần đạt sau khi hoàn thành chương trình | 20/04/2026 | 20/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Thiết lập môi trường làm việc: <br>&emsp; + Cài đặt Visual Studio Code <br>&emsp; + Cài đặt Git và cấu hình tài khoản GitHub <br>&emsp; + Cài đặt Node.js, Python <br>&emsp; + Cài đặt AWS CLI (chưa cấu hình, sẽ làm ở tuần 2) | 21/04/2026 | 21/04/2026 | |
+| 4 | - Tìm hiểu tổng quan về Cloud Computing: <br>&emsp; + Khái niệm Cloud, lợi ích so với on-premises <br>&emsp; + Mô hình IaaS, PaaS, SaaS <br>&emsp; + Giới thiệu về Amazon Web Services <br>&emsp; + AWS Global Infrastructure: Region, Availability Zone, Edge Location | 22/04/2026 | 22/04/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Lập kế hoạch học tập cá nhân cho 12 tuần <br> - Xác định mục tiêu cụ thể từng giai đoạn <br> - Tìm hiểu cách viết worklog và yêu cầu báo cáo | 23/04/2026 | 24/04/2026 | |
 
 ### Kết quả đạt được tuần 1:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Làm quen và kết nối được với các thành viên trong nhóm First Cloud Journey, nắm rõ nội quy và kỳ vọng của chương trình thực tập.
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Hiểu được bức tranh tổng thể về lộ trình 12 tuần: từ các dịch vụ AWS cơ bản (tuần 2–8) đến việc triển khai một dự án thực tế trên AWS (tuần 9–12).
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Nắm được các khái niệm Cloud Computing nền tảng:
+  * Sự khác biệt giữa Cloud và On-premises
+  * 3 mô hình dịch vụ: IaaS, PaaS, SaaS
+  * Cấu trúc hạ tầng toàn cầu của AWS: Region, AZ, Edge Location
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Thiết lập xong môi trường làm việc cá nhân: VS Code, Git, GitHub, Node.js, Python, AWS CLI (chưa cấu hình credentials — sẽ thực hiện ở tuần 2 sau khi có tài khoản AWS).
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Lập được kế hoạch học tập 12 tuần với mục tiêu rõ ràng cho từng giai đoạn, làm nền tảng để bám sát tiến độ trong suốt chương trình.

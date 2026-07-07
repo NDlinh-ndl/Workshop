@@ -1,57 +1,43 @@
 ---
 title: "Week 5 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 5 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Configure Route 53 for DNS management and routing policies.
+* Protect web applications with AWS WAF.
+* Encrypt data with AWS Key Management Service (KMS).
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| Mon | - Review Storage and Database knowledge from last week <br> - Read documentation on basic DNS and record types <br> - Study AWS Security best practices overview | 05/18/2026 | 05/18/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| Tue | **Lab 10: Hybrid DNS Management with Amazon Route 53** <br> - Study Route 53: Hosted Zones, Record Types <br> - Configure Routing Policies: Simple, Weighted, Latency, Failover, Geolocation <br> - Integrate Route 53 with ALB and CloudFront <br> - Set up Health Checks <br> - Practice DNS failover scenarios | 05/19/2026 | 05/19/2026 | <https://000010.awsstudygroup.com/> |
+| Wed | **Lab 11: Application Protection with AWS WAF** <br> - Study WAF: Web ACL, Rules, Rule Groups <br> - Create a Web ACL with AWS Managed Rules <br> - Write custom rules to block/allow traffic <br> - Attach WAF to ALB and CloudFront <br> - Analyze WAF logs in CloudWatch | 05/20/2026 | 05/20/2026 | <https://000026.awsstudygroup.com/> |
+| Thu | **Lab 12: Encryption with AWS Key Management Service (KMS)** <br> - Study KMS: CMK, Data Key, Envelope Encryption <br> - Create a KMS key and configure key policy <br> - Encrypt EBS volumes and S3 buckets with KMS <br> - Encrypt RDS database <br> - Use KMS with AWS CLI | 05/21/2026 | 05/22/2026 | <https://000033.awsstudygroup.com/> |
+| Fri | - Review and consolidate Week 5 knowledge <br> - Design a complete security architecture for a web application <br> - Write notes on AWS Security best practices | 05/22/2026 | 05/22/2026 | |
 
 ### Week 5 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Configured Route 53 proficiently:
+  * Created hosted zones and managed DNS records
+  * Configured 5+ different routing policy types
+  * Set up health checks and automatic DNS failover
+  * Understood how Route 53 integrates with other AWS services
 
-* Successfully created and configured an AWS Free Tier account.
+* Protected applications with AWS WAF:
+  * Created Web ACLs with managed rule groups
+  * Wrote custom rules to handle specific threats
+  * Analyzed and investigated WAF logs
+  * Understood common attack types: SQL injection, XSS, DDoS
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Managed encryption with KMS:
+  * Created and managed Customer Managed Keys
+  * Applied at-rest encryption to EBS, S3, and RDS
+  * Understood envelope encryption mechanics
+  * Configured automatic key rotation

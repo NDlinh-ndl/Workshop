@@ -1,59 +1,43 @@
 ---
 title: "Worklog Tuần 5"
 date: 2024-01-01
-weight: 1
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Cấu hình Route 53 cho DNS management và routing policies.
+* Bảo vệ ứng dụng web với AWS WAF.
+* Mã hóa dữ liệu với AWS Key Management Service (KMS).
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --------- | ------------ | --------------- | -------------- |
+| 2 | - Ôn lại kiến thức Storage và Database tuần trước <br> - Đọc tài liệu về DNS cơ bản và các loại record <br> - Tìm hiểu tổng quan về AWS Security best practices | 18/05/2026 | 18/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | **Lab 10: Hybrid DNS Management with Amazon Route 53** <br> - Tìm hiểu Route 53: Hosted Zones, Record Types <br> - Cấu hình các Routing Policy: Simple, Weighted, Latency, Failover, Geolocation <br> - Tích hợp Route 53 với ALB và CloudFront <br> - Thiết lập Health Checks <br> - Thực hành DNS failover scenario | 19/05/2026 | 19/05/2026 | <https://000010.awsstudygroup.com/> |
+| 4 | **Lab 11: Application Protection with AWS WAF** <br> - Tìm hiểu WAF: Web ACL, Rules, Rule Groups <br> - Tạo Web ACL với AWS Managed Rules <br> - Viết custom rule để block/allow traffic <br> - Gắn WAF vào ALB và CloudFront <br> - Phân tích WAF logs trong CloudWatch | 20/05/2026 | 20/05/2026 | <https://000026.awsstudygroup.com/> |
+| 5 | **Lab 12: Encryption with AWS Key Management Service (KMS)** <br> - Tìm hiểu KMS: CMK, Data Key, Envelope Encryption <br> - Tạo KMS key và cấu hình key policy <br> - Mã hóa EBS volume và S3 bucket với KMS <br> - Mã hóa RDS database <br> - Sử dụng KMS với AWS CLI | 21/05/2026 | 22/05/2026 | <https://000033.awsstudygroup.com/> |
+| 6 | - Ôn tập và tổng hợp kiến thức tuần 5 <br> - Thiết kế kiến trúc bảo mật cho một ứng dụng web hoàn chỉnh <br> - Ghi chép AWS Security best practices | 22/05/2026 | 22/05/2026 | |
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Cấu hình Route 53 thành thạo:
+  * Tạo hosted zone và quản lý các DNS record
+  * Cấu hình được 5+ loại routing policy khác nhau
+  * Thiết lập health check và tự động failover
+  * Hiểu cách Route 53 tích hợp với các dịch vụ AWS khác
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Bảo vệ ứng dụng với AWS WAF:
+  * Tạo Web ACL với các managed rule groups
+  * Viết custom rule để xử lý các mối đe dọa cụ thể
+  * Phân tích và điều tra WAF logs
+  * Hiểu các loại tấn công phổ biến: SQL injection, XSS, DDoS
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Quản lý mã hóa với KMS:
+  * Tạo và quản lý Customer Managed Keys
+  * Áp dụng mã hóa at-rest cho EBS, S3, RDS
+  * Hiểu cơ chế envelope encryption
+  * Cấu hình key rotation tự động

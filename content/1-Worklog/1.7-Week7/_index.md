@@ -1,57 +1,44 @@
 ---
 title: "Week 7 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Build a serverless backend with AWS Lambda and API Gateway.
+* Use AWS Systems Manager to manage and operate an EC2 fleet.
+* Implement AWS Backup for comprehensive data protection.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| Mon | - Review CI/CD and Container knowledge from last week <br> - Read documentation on Serverless architecture <br> - Study event-driven architecture patterns | 06/01/2026 | 06/01/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| Tue | **Lab 16: Serverless Automation with AWS Lambda** <br> - Study Lambda: triggers, execution model, cold start <br> - Write a Lambda function in Python/Node.js <br> - Configure Lambda triggers: API Gateway, S3, DynamoDB Streams <br> - Set up environment variables and Lambda Layers <br> - Monitor Lambda with CloudWatch Logs and X-Ray | 06/02/2026 | 06/02/2026 | <https://000022.awsstudygroup.com/> |
+| Wed | **Lab 17: Remote Server Access with Systems Manager Session Manager** <br> - Study AWS Systems Manager and its features <br> - Configure Session Manager for SSH-less server access <br> - Use SSM Run Command to run commands at scale <br> - Manage Patch Manager for EC2 fleet patching <br> - Store configuration with Parameter Store | 06/03/2026 | 06/03/2026 | <https://000058.awsstudygroup.com/> |
+| Thu | **Lab 18: Data Protection with AWS Backup** <br> - Study AWS Backup: Backup Plans, Vaults, Recovery Points <br> - Create an automated Backup Plan for EC2, RDS, EFS, DynamoDB <br> - Configure backup retention and lifecycle policies <br> - Practice restoring from a backup <br> - Set up cross-region backup | 06/04/2026 | 06/05/2026 | <https://000013.awsstudygroup.com/> |
+| Fri | - Review and consolidate Week 7 knowledge <br> - Build a small serverless CRUD app: Lambda + API Gateway + DynamoDB <br> - Set up a backup strategy for the entire environment | 06/05/2026 | 06/05/2026 | |
 
 ### Week 7 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Developed serverless apps with AWS Lambda:
+  * Wrote and deployed Lambda functions handling multiple event types
+  * Integrated Lambda with API Gateway to create a RESTful API
+  * Connected Lambda to DynamoDB and S3
+  * Debugged and monitored Lambda using CloudWatch Logs Insights
+  * Understood how to optimize cold start and memory allocation
 
-* Successfully created and configured an AWS Free Tier account.
+* Managed systems with AWS Systems Manager:
+  * Accessed EC2 securely via Session Manager without opening port 22
+  * Ran commands across multiple instances simultaneously
+  * Automated OS patching across a server fleet
+  * Stored secrets and configuration in Parameter Store
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Established a comprehensive backup strategy:
+  * Created automated backup plans with defined schedules
+  * Protected multiple resource types: EC2, RDS, DynamoDB
+  * Successfully restored from a backup recovery point
+  * Configured cross-region backup for disaster recovery
