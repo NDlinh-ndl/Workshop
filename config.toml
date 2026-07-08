@@ -1,4 +1,4 @@
-baseURL = "https://ndlinh-ndl.github.io/Workshop/"
+﻿baseURL = "https://ndlinh-ndl.github.io/Workshop/"
 relativeURLs = false
 canonifyURLs = false
 defaultContentLanguage = "en"
