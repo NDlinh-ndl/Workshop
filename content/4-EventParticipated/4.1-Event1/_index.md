@@ -108,4 +108,4 @@ The Q&A sessions after each talk gave me the chance to ask speakers specific que
 
 ### Event Photos
 
-![FCAJ Community Day - May 2026](/images/event21.jpg)
+![FCAJ Community Day - May 2026](/images/event12.jpg)

@@ -108,4 +108,4 @@ Phần Q&A sau mỗi talk tạo cơ hội hỏi trực tiếp các diễn giả 
 
 ### Hình ảnh sự kiện
 
-![FCAJ Community Day - May 2026](/images/event21.jpg)
+![FCAJ Community Day - May 2026](/images/event12.jpg)
